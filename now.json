@@ -1,0 +1,23 @@
+{
+    "builds": [
+        {
+            "src": "subconverter-demo/subconverter.exe",
+            "use": "now-static-bin",
+            "config": {
+                    "port": 25500,
+                    "timeout": 200,
+                    "includeFiles": [
+                        "subconverter-demo/**"
+               ]
+            }
+        },
+        {
+            "src": "index.html",
+            "use": "@now/static"
+        }
+    ],
+    "routes": [
+    {"src": "/", "dest": "index.html"},
+    {"src": "/(.*)", "dest": "subconverter-demo/subconverter.exe"}
+    ]
+}
