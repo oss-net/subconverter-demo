@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "src": "subconverter/subconverter",
+            "src": "subconverter/subconverter.exe",
             "use": "now-static-bin",
             "config": {
                     "port": 25500,
@@ -23,7 +23,7 @@
         },
         {
             "src": "/(.*)", 
-            "dest": "subconverter/subconverter"
+            "dest": "subconverter/subconverter.exe"
         }
     ]
 }
