@@ -17,7 +17,13 @@
         }
     ],
     "routes": [
-    {"src": "/", "dest": "index.html"},
-    {"src": "/(.*)", "dest": "subconverter/subconverter.exe"}
+        {
+            "src": "/", 
+            "dest": "index.html"
+        },
+        {
+            "src": "/(.*)", 
+            "dest": "subconverter/subconverter.exe"
+        }
     ]
 }
